@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bhargav Palaskar — Simple HTML Portfolio</title>
+    <meta name="description" content="A pure-HTML semantic portfolio page for teaching HTML structure to beginners">
+  </head>
+  <body>
+    <!-- Header with navigation -->
+    <header>
+      <nav aria-label="Main navigation">
+        <!-- Logo placeholder -->
+        <a href="#" aria-label="Home">[B]</a>
+        <!-- Navigation links -->
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+      <!-- Hero section: image placeholder left, intro on right -->
+      <section id="about">
+        <figure>
+          <!-- Inline SVG as image placeholder -->
+          <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><rect width='100%' height='100%' fill='%23e5e7eb'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%23737474' font-size='18'>Portrait</text></svg>" alt="Portrait placeholder">
+          <figcaption>Portrait placeholder</figcaption>
+        </figure>
+
+        <div>
+          <p>Hey, I'm</p>
+          <h1>Bhargav Palaskar</h1>
+          <p>I'm a Product Designer based in Aiken with experience working on.</p>
+        </div>
+      </section>
+
+      <!-- Section with two articles: work history and contact -->
+      <section id="main-content">
+        <!-- Article 1: Work history -->
+        <article aria-labelledby="work-heading">
+          <h2 id="work-heading">I've worked at</h2>
+          <ul>
+            <li>
+              <h3>CompanyName</h3>
+              <p>Position</p>
+              <p><time datetime="2023-06">Date</time> — <time datetime="2025-07">Jul 2025</time></p>
+            </li>
+            <li>
+              <h3>CompanyName</h3>
+              <p>Position</p>
+              <p><time datetime="2022-03">Date</time> — <time datetime="2023-01">Jan 2023</time></p>
+            </li>
+            <li>
+              <h3>CompanyName</h3>
+              <p>Position</p>
+              <p><time datetime="2019-12">Date</time> — <time datetime="2022-03">Mar 2022</time></p>
+            </li>
+          </ul>
+          <p><a href="#">See more</a></p>
+        </article>
+
+        <!-- Article 2: Contact -->
+        <article aria-labelledby="contact-heading">
+          <h2 id="contact-heading">You can get in touch via</h2>
+          <ul>
+            <li>
+              <h3>LinkedIn</h3>
+              <p><a href="link">LinkedInID</a></p>
+            </li>
+            <li>
+              <h3>Email</h3>
+              <p><a href="mailto:palaskar@usca.edu">palaskar@usca</a></p>
+            </li>
+          </ul>
+        </article>
+ 
+        <!-- Aside for additional info -->
+        <aside>
+          <h2>Additional information</h2>
+          <p>This aside can contain extra context such as skills, availability, or links to a resume.</p>
+        </aside>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>© <span id="year">2026</span> Bhargav Palaskar. Simple semantic HTML example.</p>
+    </footer>
+
+    <script>
+      // set current year dynamically
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
